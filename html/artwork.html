@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .navbar-nav {
+        float: center;
+        margin: 0px;
+      }
+
+      .card {
+        box-shadow: 0 8px 16px 0 aqua;
+        max-width: 2000px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+      }
+
+      .price {
+        color: grey;
+        font-size: 22px;
+      }
+
+      .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      .card button:hover {
+        opacity: 0.7;
+      }
+      .glow {
+        font-size: 80px;
+        color: rgb(32, 27, 27);
+
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #a4aeb1, 0 0 20px #8bb9bd, 0 0 30px #6eb7b9,
+            0 0 40px #57b8b8, 0 0 50px #3fa6b8, 0 0 60px #24b5c9,
+            0 0 70px #0fadc9;
+        }
+
+        to {
+          text-shadow: 0 0 20px #0fadc9, 0 0 30px#24b5c9, 0 0 40px #3fa6b8,
+            0 0 50px #57b8b8, 0 0 60px #6eb7b9, 0 0 70px #8bb9bd,
+            0 0 80px #a4aeb1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      style="
+        background-image: url('../images/background/bg9.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      "
+    >
+      <header>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="#">
+                <img src="../images/background/logo1.png" style="width: 60px"
+              /></a>
+            </div>
+
+            
+            <div
+              class="collapse navbar-collapse"
+              id="bs-example-navbar-collapse-1"
+            >
+            <b>
+              <ul class="nav navbar-nav" style="color: white">
+                <li></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                    >ARTWORKS <span class="caret"></span
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#div1">Oil Piantings</a></li>
+                    <li><a href="#div2">Arcylic Paintings</a></li>
+                    <li><a href="#div3">Enamel Paintings</a></li>
+                    <li><a href="#div4">Hot-Wax Paintings</a></li>
+                    <li><a href="#div5">Water-Color Painting</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">CONTACT US</a></li>
+              </ul>
+            </b>
+            </div>
+            
+          </div>
+        
+        </nav>
+      </header>
+      <br /><br />
+
+      <div class="container">
+        <div>
+          <p
+            class="glow"
+            style="
+              font-family: 'Italianno', cursive;
+              font-size: 15vw;
+              color: white;
+            "
+          >
+            <b>Artworks</b>
+          </p>
+          <p style="font-family: cursive; font-size: 2vw">
+            Hi! I am Sania Khatri. <br />
+            Work of art refers to what is being depicted and might be helpful in
+            deriving a basic meaning. It appears in the visual arts in several
+            forms , all of which may be figurative (realistic) or abstract
+            (distorted). Among them are portraits, landscapes, still-lifes,
+            genre art, and narrative art
+          </p>
+          <p style="font-family: fangsong; font-size: 8vw">My Artworks</p> <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="div1">
+        <div>
+          <p
+            class="container-fluid glow"
+            style="font-family: cursive; font-size: 5vw"
+          >
+            Oil Painting
+          </p>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/oil paintings/p1.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1200</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/oil paintings/p2.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1250</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/oil paintings/p3.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1300</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/oil paintings/p4.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1500</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <p
+          class="container-fluid glow"
+          style="font-family: cursive; font-size: 5vw"
+        >
+          Arcylic Paintings
+        </p>
+      </div>
+      <div id="div2">
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/arcylic painting/a5.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1600</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/arcylic painting/a2.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1350</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/arcylic painting/a3.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1400</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/arcylic painting/a4.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1600</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <p
+          class="container-fluid glow"
+          style="font-family: cursive; font-size: 5vw"
+        >
+          Enamel Painting
+        </p>
+      </div>
+      <div class="div3">
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/enamel painting/e1.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1400</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/enamel painting/e2.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1350</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/enamel painting/e3.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1200</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/enamel painting/e4.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1250</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="div4">
+      <div>
+        <p
+          class="container-fluid glow"
+          style="font-family: cursive; font-size: 5vw">
+          Hot-Wax Paintings
+        </p>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card">
+          <img
+            src="../images/hot-wax painting/img49.jpg"
+            style="width: -webkit-fill-available; height: 35rem"
+          />
+          <p class="price">₹1300</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card">
+          <img
+            src="../images/hot-wax painting/img50.jpg"
+            style="width: -webkit-fill-available; height: 35rem"
+          />
+          <p class="price">₹1350</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card">
+          <img
+            src="../images/hot-wax painting/img51.jpg"
+            style="width: -webkit-fill-available; height: 35rem"
+          />
+          <p class="price">₹1250</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card">
+          <img
+            src="../images/hot-wax painting/img52.jpg"
+            style="width: -webkit-fill-available; height: 35rem"
+          />
+          <p class="price">₹1400</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="div5">
+      <div class="container-fluid">
+        <div>
+          <p
+            class="container-fluid glow"
+            style="font-family: cursive; font-size: 5vw"
+          >
+            Water-Color Paintings
+          </p>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/water-color painting/img9.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1400</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/water-color painting/img10.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1300</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/water-color painting/img13.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1350</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img
+              src="../images/water-color painting/img15.jpg"
+              style="width: -webkit-fill-available; height: 35rem"
+            />
+            <p class="price">₹1550</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+    <section style="background-image: url('../images/background/bg17.jpg') ; background-repeat:no-repeat;  background-size: cover; background-attachment: fixed ;">
+      <center><div class="container"style="color: white; ">
+        <br> <br> <br>
+        <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> <br>
+        <br>
+        <span style="font-size: 70px;" class="glyphicon glyphicon-thumbs-up"></span>
+        <p  class="container" style="font-family:'Dancing Script', cursive; font-size: 5vw"> Feeling in Love? Purchase Now!</p>
+       
+        <button style="color:black;font-size: 30px;border-radius: 35px"> Purchase</button>
+        <br> <br> <br>
+            </center>
+          </section>
+          
+  </body>
+</html>
