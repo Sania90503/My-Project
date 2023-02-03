@@ -4,132 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painting</title>
+    <title>Contact-Us</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../css/style.css">
-  <style>
-    
-.navbar-nav {
-    float: center;
-    margin: 0px;
-}
-
-
-  </style>
+  <link rel="stylesheet" href="../css/contact.css">
 
 </head>
 <body>
-  <section style="background-image: url('../images/background/bg8.jpg') ; background-repeat: no-repeat;background-size: cover; background-attachment: fixed;  ">
     <header>
       <nav class="navbar navbar-default">
         <div class="container-fluid">
         
           <div class="navbar-header">
-            <button
-              type="button"
+            <button type="button"
               class="navbar-toggle collapsed"
               data-toggle="collapse"
               data-target="#bs-example-navbar-collapse-1"
-              aria-expanded="false"
-            >
+              aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="#">
-              <img src="../images/background/logo1.png" style="width: 60px"
-            /></a>
+            <a href="#"> <img src="../images/home/logo.png" style="width: 60px"/></a>
           </div>
-
-          
-          <div
-            class="collapse navbar-collapse"
-            id="bs-example-navbar-collapse-1"
-          >
+          <div class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1" >
           <b>
             <ul class="nav navbar-nav" style="color: white">
-              <li></li>
               <li ><a href="index.html">HOME</a></li>
               <li><a href="about.html">ABOUT</a></li>
               <li><a href="artwork.html">ARTWORKS</a></li>
-
-              <li><a href="contact.html">CONTACT US</a></li>
+              <li class="active"><a href="contact.html">CONTACT US</a></li>
             </ul>
           </b>
           </div>
-         
         </div>
-      
       </nav>
       
-    </header>  <br><br>
-    <br><br>
+    </header>
+    
+<section class="mb-4">
+  <div>
+    <p class="message glow"><b><u>M</u>essage me</b></p>
+    <h3 style="font-family: cursive">
+     <b>Get in Touch</b>
+    </h3>
+    </p>
+  </div>
 
-      </section>
-      <section>
-        <div class="container">
-          <p class="largefont text-center"style="color:#3e2093;">Main Office</p>
-          <div class="content">
-            <div class="left-side">
-              <div class="address details">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="topic">Address</div>
-                <div class="text-one">International Painting Art Gallery </div>
-                <div class="text-two">Sector-21,rajpath road ,new delhi-110011</div>
-              </div>
-              <div class="phone details">
-                <i class="fas fa-phone-alt"></i>
-                <div class="topic">Phone</div>
-                <div class="text-one">+91-120-40937890</div>
-               
-              </div>
-              <div class="email details">
-                <i class="fas fa-envelope"></i>
-                <div class="topic">Email</div>
-                <div class="text-one">saniakhatri003@gmail.com</div>
-              </div>
-            </div>
-            <div class="right-side">
-              <div class="topic-text">Send  us a message</div>
-              
-            <form action="#">
-              <div class="input-box">
-                <input type="text" placeholder="Enter your name">
-              </div>
-              <div class="input-box">
-                <input type="text" placeholder="Enter your email">
-              </div>
-              <div class="input-box message-box">
-                <input type="text" placeholder="Enter your message">
-              </div>
-              <div class="button">
-                <input type="button" value="Send Now"class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" >
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Click</h4>
+  <div class="row">
+      <!--Grid column-->
+      <div class="col-md-9 ">
+          <form>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="md-form">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Your name</label>
                       </div>
-                      <div class="modal-body">
-                      Continue
+                  </div>
+
+                  <div class="col-md-6">
+                      <div class="md-form">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Your email</label>
                       </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Continue</button>
-                       
-                      </div>
-                    </div>
                   </div>
                 </div>
+             
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Subject</label>
+                      </div>
+                  </div>
               </div>
-            </form>
+              
+              <div class="row">
+
+                  <div class="col-md-12">
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Your message</label>
+                      </div>
+
+                  </div>
+              </div>
+            
+          </form>
+
+          <div class="text-center text-md-left">
+              <a class="btn btn-primary">Send</a>
           </div>
-          </div>
-        </div>
-      </section>
+        
+      </div>
+      
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>Sonipat , Haryana , India</p>
+              </li>
+
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>+ 9050325392</p>
+              </li>
+
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>saniakhatri003@gmail.com</p>
+              </li>
+          </ul>
+      </div>
+  </div>
+</section>
+<footer>
+  <center>
+    <div class="container">
+    <br> <br> <br>
+    <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> <br>
+    <br>
+    <span style="font-size: 70px;" class="glyphicon glyphicon-thumbs-up"></span>
+    <p  class="container"> Feeling in Love? Purchase Now!</p>
+   
+    <button> Purchase</button>
+    <br> <br> <br>
+        </center>
+      </footer>
+
+    
+
      
 </body>
 </html>
