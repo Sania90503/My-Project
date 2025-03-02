@@ -1,4 +1,5 @@
 # My-Project
+
 A responsive e-commerce platform designed to enhance user experience.
 
 Designed and developed a responsive e-commerce website using HTML, CSS, and Bootstrap 3 for showcasing artwork.
